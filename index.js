@@ -33,11 +33,11 @@ function tinh_luong() {
  */
 
 function tinh_trungbinh() {
-    var so1 = Number(document.getElementById("so_1").value)
-    var so2 = Number(document.getElementById("so_2").value)
-    var so3 = Number(document.getElementById("so_3").value)
-    var so4 = Number(document.getElementById("so_4").value)
-    var so5 = Number(document.getElementById("so_5").value)
+    var so1 = document.getElementById("so_1").value * 1
+    var so2 = document.getElementById("so_2").value * 1
+    var so3 = document.getElementById("so_3").value * 1
+    var so4 = document.getElementById("so_4").value * 1
+    var so5 = document.getElementById("so_5").value * 1
     var trungbinh = document.getElementById("trung binh")
     trungbinh.innerText = (so1 + so2 + so3 + so4 + so5) / 5
 }
@@ -80,8 +80,8 @@ function doitien() {
  */
 
 function tinh_chuvidientich() {
-    var chieudai = Number(document.getElementById("chieudai").value)
-    var chieurong = Number(document.getElementById("chieurong").value)
+    var chieudai = document.getElementById("chieudai").value * 1
+    var chieurong = document.getElementById("chieurong").value * 1
     var dientich = document.getElementById("dien_tich")
     var chuvi = document.getElementById("chu_vi")
     dientich.innerText = chieudai * chieurong
