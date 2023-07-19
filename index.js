@@ -82,8 +82,8 @@ function doitien() {
 function tinh_chuvidientich() {
     var chieudai = Number(document.getElementById("chieudai").value)
     var chieurong = Number(document.getElementById("chieurong").value)
-    var dientich = document.getElementById("dientich")
-    var chuvi = document.getElementById("chuvi")
+    var dientich = document.getElementById("dien_tich")
+    var chuvi = document.getElementById("chu_vi")
     dientich.innerText = chieudai * chieurong
     chuvi.innerText = chieudai + chieurong
 }

@@ -16,81 +16,124 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <!-- Line awasome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- My css -->
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body class="container">
     <!-- Bài 1: Tính tiền lương nhân viên -->
-    <h1>Bài 1</h1>
-    <h2>Lương 1 ngày: 100.000</h2>
-    <br />
-    <input type="number" id="so_ngay_lam" placeholder="Số ngày làm" />
-    <br /><br />
-    <button class="btn btn-primary" onclick="tinh_luong()">Tính lương</button>
-    <br /><br />
-    <h2>
-      Lương:
-      <h2 id="luong"></h2>
-    </h2>
-    <br /><br />
+    <div class="item">
+      <h1>Bài 1</h1>
+      <div class="d-flex flex-wrap tieu_de">
+        <i class="las la-hand-holding-usd"></i>
+        <h2>Tính tiền lương của nhân viên</h2>
+      </div>
+      <p class="font-italic">Lương mặc định 1 ngày: 100.000</p>
+      <h3>Hãy nhập số ngày làm</h3>
+      <input type="number" id="so_ngay_lam" placeholder="Số ngày làm" />
+      <br /><br />
+      <button class="btn btn-primary" onclick="tinh_luong()">Tính lương</button>
+      <div
+        class="bg-success text-white d-flex flex-wrap align-items-end justify-content-center"
+      >
+        <i class="las la-hand-point-right p-1"></i>
+        <h2 id="luong"></h2>
+      </div>
+    </div>
     <!-- Bài 2: Tính giá trị trung bình -->
-    <h1>Bài 2</h1>
-    <input type="number" id="so_1" placeholder="Nhập số thứ 1" />
-    <input type="number" id="so_2" placeholder="Nhập số thứ 2" />
-    <input type="number" id="so_3" placeholder="Nhập số thứ 3" />
-    <br /><br />
-    <input type="number" id="so_4" placeholder="Nhập số thứ 4" />
-    <input type="number" id="so_5" placeholder="Nhập số thứ 5" />
-    <br /><br />
-    <button class="btn btn-primary" onclick="tinh_trungbinh()">
-      Tính trung bình
-    </button>
-    <br /><br />
-    <h2>
-      Trung bình:
-      <h2 id="trung binh"></h2>
-    </h2>
-    <br /><br />
+    <div class="item">
+      <h1>Bài 2</h1>
+      <div class="d-flex flex-wrap tieu_de">
+        <i class="las la-calculator"></i>
+        <h2>Tính giá trị trung bình</h2>
+      </div>
+      <h3>Hãy nhập 5 số thực</h3>
+      <input type="number" id="so_1" placeholder="Số thứ 1" />
+      <input type="number" id="so_2" placeholder="Số thứ 2" />
+      <input type="number" id="so_3" placeholder="Số thứ 3" />
+      <input type="number" id="so_4" placeholder="Số thứ 4" />
+      <input type="number" id="so_5" placeholder="Số thứ 5" />
+      <br /><br />
+      <button class="btn btn-primary" onclick="tinh_trungbinh()">
+        Tính trung bình
+      </button>
+      <div
+        class="bg-success text-white d-flex flex-wrap align-items-end justify-content-center"
+      >
+        <i class="las la-hand-point-right p-1"></i>
+        <h2 id="trung binh"></h2>
+      </div>
+    </div>
     <!-- Bài 3: Quy đổi tiền -->
-    <h1>Bài 3</h1>
-    <h2>Số tiền USD:</h2>
-    <input type="number" id="tienUSD" placeholder="Nhập số tiền USD" />
-    <br /><br />
-    <button class="btn btn-primary" onclick="doitien()">Quy đổi tiền</button>
-    <br /><br />
-    <h2>
-      Chuyển đổi thành:
-      <div class="d-flex">
+    <div class="item">
+      <h1>Bài 3</h1>
+      <div class="d-flex flex-wrap tieu_de">
+        <i class="las la-money-check-alt"></i>
+        <h2>Quy đổi tiền</h2>
+      </div>
+      <p class="font-italic">Giá USD hiện nay đang là 23.500 VND</p>
+      <h3>Hãy nhập số tiền USD bạn muốn quy đổi</h3>
+      <input type="number" id="tienUSD" placeholder="Số tiền USD" />
+      <br /><br />
+      <button class="btn btn-primary" onclick="doitien()">Quy đổi tiền</button>
+      <div
+        class="bg-success text-white d-flex flex-wrap align-items-end justify-content-center"
+      >
+        <i class="las la-hand-point-right p-1"></i>
         <h2 id="doi tien"></h2>
-        <br /><br />
         <h2>VND</h2>
       </div>
-    </h2>
-    <br /><br />
+    </div>
     <!-- Bài 4: Tính diện tích, chu vi hình chữ nhật -->
-    <h1>Bài 4</h1>
-    <input type="number" id="chieudai" placeholder="Nhập chiều dài" />
-    <input type="number" id="chieurong" placeholder="Nhập chiều rộng" />
-    <br /><br />
-    <button class="btn btn-primary" onclick="tinh_chuvidientich()">Tính</button>
-    <h2>
-      Diện tích:
-      <h2 id="dientich"></h2>
-    </h2>
-    <br />
-    <h2>
-      Chu vi:
-      <h2 id="chuvi"></h2>
-    </h2>
-    <br /><br />
+    <div class="item">
+      <h1>Bài 4</h1>
+      <div class="d-flex flex-wrap tieu_de">
+        <i class="las la-ruler"></i>
+        <h2>Tính diện tích, chu vi hình chữ nhật</h2>
+      </div>
+      <h3>Hãy nhập chiều dài và chiều rộng</h3>
+      <input type="number" id="chieudai" placeholder="Chiều dài" />
+      <input type="number" id="chieurong" placeholder="Chiều rộng" />
+      <br /><br />
+      <button class="btn btn-primary" onclick="tinh_chuvidientich()">
+        Tính
+      </button>
+      <div
+        class="bg-success text-white d-flex flex-wrap align-items-end justify-content-center"
+      >
+        <i class="las la-hand-point-right p-1"></i>
+        <h2>Diện tích:</h2>
+        <h2 id="dien_tich"></h2>
+        <h2>Chu vi:</h2>
+        <h2 id="chu_vi"></h2>
+      </div>
+    </div>
     <!-- Bài 5: Tính tổng 2 ký số -->
-    <h1>Bài 5</h1>
-    <input type="number" id="so2chuso" placeholder="Nhập số có 2 chữ số" />
-    <br /><br />
-    <button class="btn btn-primary" onclick="tinh_tong2kyso()">Tổng là:</button>
-    <h2>
-      Tổng 2 ký số:
-      <h2 id="tong2kyso"></h2>
-    </h2>
-    <br /><br />
+    <div class="item">
+      <h1>Bài 5</h1>
+      <div class="d-flex flex-wrap tieu_de">
+        <i class="las la-plus-circle"></i>
+        <h2>Tính tổng 2 ký số</h2>
+      </div>
+      <h3>Hãy nhập một số có 2 chữ số</h3>
+      <input type="number" id="so2chuso" placeholder="Số có 2 chữ số" />
+      <br /><br />
+      <button class="btn btn-primary" onclick="tinh_tong2kyso()">
+        Tính tổng
+      </button>
+      <div
+        class="bg-success text-white d-flex flex-wrap align-items-end justify-content-center"
+      >
+        <i class="las la-hand-point-right p-1"></i>
+        <h2 id="tong2kyso"></h2>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
