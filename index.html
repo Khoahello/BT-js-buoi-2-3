@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <!-- Bài 1 -->
+    <h1>Bài 1</h1>
+    <h2>Lương 1 ngày: 100.000</h2>
+    <br />
+    <input type="number" id="so_ngay_lam" placeholder="Số ngày làm" />
+    <br /><br />
+    <button class="btn btn-primary" onclick="tinh_luong()">Tính lương</button>
+    <br /><br />
+    <h2>
+      Lương:
+      <h2 id="luong"></h2>
+    </h2>
+    <br /><br />
+    <!-- Bài 2 -->
+    <h1>Bài 2</h1>
+    <input type="number" id="so1" placeholder="Nhập số thứ 1" />
+    <input type="number" id="so2" placeholder="Nhập số thứ 2" />
+    <input type="number" id="so3" placeholder="Nhập số thứ 3" />
+    <br /><br />
+    <input type="number" id="so4" placeholder="Nhập số thứ 4" />
+    <input type="number" id="so5" placeholder="Nhập số thứ 5" />
+    <br /><br />
+    <button class="btn btn-primary" onclick="tinh_trungbinh()">
+      Tính trung bình
+    </button>
+    <br /><br />
+    <h2>
+      Trung bình:
+      <h2 id="trung binh"></h2>
+    </h2>
+    <br /><br />
+    <!-- Bài 3 -->
+    <h1>Bài 3</h1>
+    <h2>Số tiền USD:</h2>
+    <input type="number" id="tienUSD" placeholder="Nhập số tiền USD" />
+    <br /><br />
+    <button class="btn btn-primary" onclick="doitien()">Quy đổi tiền</button>
+    <br /><br />
+    <h2>
+      Chuyển đổi thành:
+      <div class="d-flex">
+        <h2 id="doi tien"></h2>
+        <br /><br />
+        <h2>VNĐ</h2>
+      </div>
+    </h2>
+    <br /><br />
+    <!-- Bài 4 -->
+    <h1>Bài 4</h1>
+    <input type="number" id="chieudai" placeholder="Nhập chiều dài" />
+    <input type="number" id="chieurong" placeholder="Nhập chiều rộng" />
+    <br /><br />
+    <button class="btn btn-primary" onclick="tinh_chuvidientich()">Tính</button>
+    <h2>
+      Diện tích:
+      <h2 id="dientich"></h2>
+    </h2>
+    <br />
+    <h2>
+      Chu vi:
+      <h2 id="chuvi"></h2>
+    </h2>
+    <br /><br />
+    <!-- Bài 5 -->
+    <h1>Bài 5</h1>
+    <input type="number" id="so2chuso" placeholder="Nhập số có 2 chữ số" />
+    <br /><br />
+    <button class="btn btn-primary" onclick="tinh_tong2kyso()">Tổng là:</button>
+    <h2>
+      Tổng 2 ký số:
+      <h2 id="tong2kyso"></h2>
+    </h2>
+    <br /><br />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My js -->
+    <script src="./index.js"></script>
+  </body>
+</html>
