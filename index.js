@@ -58,8 +58,8 @@ function tinh_trungbinh() {
 
 function doitien() {
     var tienUSD = document.getElementById("tienUSD").value
-    var tienVND = document.getElementById("doi tien")
-    tienVND.innerText = new Intl.NumberFormat('vn-VN').format (tienUSD * 23500)
+    var tienVND = document.getElementById("doi_tien")
+    tienVND.innerText = `${new Intl.NumberFormat('vn-VN').format (tienUSD * 23500)} VND`
 }
 
 // Bài 4
@@ -80,12 +80,11 @@ function doitien() {
  */
 
 function tinh_chuvidientich() {
-    var chieudai = document.getElementById("chieudai").value * 1
-    var chieurong = document.getElementById("chieurong").value * 1
-    var dientich = document.getElementById("dien_tich")
-    var chuvi = document.getElementById("chu_vi")
-    dientich.innerText = chieudai * chieurong
-    chuvi.innerText = chieudai + chieurong
+    var chieudai = document.getElementById("chieu_dai").value * 1
+    var chieurong = document.getElementById("chieu_rong").value * 1
+    var dientich = chieudai * chieurong
+    var chuvi = (chieudai + chieurong) * 2
+    document.getElementById("tinh_dientich_chuvi").innerText = `Diện tích: ${dientich}; Chu vi: ${chuvi}`
 }
 
 // Bài 5
